@@ -242,12 +242,12 @@ module.exports = data = [
     {
         question: '¿Cuanto es 16 x 63 - 1214?',
         choices:[
-            "-506",
+            "-206",
             "506",
             "-697",
             "789"
         ],
-        answer: "-506",
+        answer: "-206",
         level:5
     },
     {
@@ -262,7 +262,7 @@ module.exports = data = [
         level:5
     },
     {
-        question: '¿Cuanto es (-163 + 843) / 8?',
+        question: '¿Cuanto es (-163 + 846) / 8?',
         choices:[
             "-89",
             "85",
