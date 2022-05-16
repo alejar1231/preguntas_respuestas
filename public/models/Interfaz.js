@@ -40,10 +40,31 @@ export class Interfaz {
      * @param {number} score Puntaje total
      */
   
-    showScores(score) {
+    async showScores(score) {
+      const allData = await fetch('http://localhost:3000/api/users', {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      });
+      const users = await allData.json();
+      let tableContent = '';
+      users.send.map((user) => {
+        tableContent += `<tr align = center><td>${user.name}</td><td align = center>${user.score}</td></tr>`;
+      })
       const gameOver = `
         <h1>Result</h1>
         <h2 id="score">Su puntaje es: ${score}</h2>
+        <br>
+        <center>
+        <table border cellpadding=10 cellspacing=0>
+        <tr>
+        <th>Nickname</th>
+        <th>score</th>
+        </tr>
+        ${tableContent}
+        </table>
+        </center>
         `;
       const element = document.getElementById("quiz");
       element.innerHTML = gameOver;

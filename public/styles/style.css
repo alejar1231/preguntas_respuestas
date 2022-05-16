@@ -12,7 +12,7 @@ body {
     height: 100vh;
 }
 
-#quiz {
+.quiz {
     background: rgb(249, 247, 247);
     width: 30rem;
     padding: 4rem;

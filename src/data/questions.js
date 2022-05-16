@@ -183,7 +183,7 @@ module.exports = data = [
         level:4
     },
     {
-        question: 'A que número natural equivale este número romano LIII?',
+        question: '¿A que número natural equivale este número romano LIII?',
         choices:[
             "53",
             "43",
@@ -205,7 +205,7 @@ module.exports = data = [
         level:4
     },
     {
-        question: 'A que número natural equivale este número romano CCXC?',
+        question: '¿A que número natural equivale este número romano CCXC?',
         choices:[
             "490",
             "590",
@@ -216,7 +216,7 @@ module.exports = data = [
         level:4
     },
     {
-        question: 'A que número natural equivale este número romano XXVI?',
+        question: '¿A que número natural equivale este número romano XXVI?',
         choices:[
             "23",
             "29",
